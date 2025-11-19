@@ -1,0 +1,67 @@
+
+.hero {
+    background: url('hero-banner.png') center center/cover no-repeat;
+    min-height: 500px;
+    display: flex; align-items: center;
+
+    color: white;
+     text-align: center;  padding: 80px 0;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;   margin-bottom: 15px;
+
+    line-height: 1.2;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;  opacity: 0.95;
+}
+
+.search-box {
+    max-width: 600px;  margin: 0 auto;
+    display: flex;  gap: 10px;
+    background: white;
+
+    padding: 8px;   border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.indexfile .btn-primary:hover {
+    background: linear-gradient(135deg, #4C8C7F 0%, #0F3E36 100%);
+}
+.search-box input {
+    flex: 1;
+    border: none;  padding: 12px 20px;
+    font-size: 16px;
+
+    border-radius: 30px;  outline: none;
+    color: #334155;
+}
+.card1:hover {
+    background: #FFE5E5;
+}
+.card2:hover {
+    background: #E5F4FF;
+}
+.card3:hover {
+    background: #FFF4E5;
+}
+.card4:hover {
+    background: #E8FFE5;
+}
+.card5:hover {
+    background: #FFE5F5;
+}
+.card6:hover {
+    background: #FFE5D9;
+}
+.card7:hover {
+    background: #E5FFFC;
+}
+.card8:hover {
+    background: #E5FFF0;
+}
