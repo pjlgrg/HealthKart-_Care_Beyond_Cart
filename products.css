@@ -1,0 +1,124 @@
+.properties {
+
+    padding: 70px 0;
+}
+
+.properties .intro-text {
+    text-align: center; max-width: 700px;
+    margin: 0 auto 50px;
+
+    color: #334155;
+}
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+
+.property-card {
+      background: white;
+    border-radius: 10px;overflow: hidden;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+      transition: box-shadow 0.3s ease; display: flex;
+    flex-direction: column;
+}
+
+.property-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.property-image {
+    height: 220px;  background: #e2e8f0;
+    position: relative;
+
+    background-size: cover;
+    background-position: center;  background-repeat: no-repeat;
+}
+.property-image.image-1 {
+    background-image: url('illus1.png');
+}
+.property-image.image-2 {
+    background-image: url('illus2.avif');
+}
+
+
+.property-image.image-3 {
+    background-image: url('illus3.png');
+}
+
+.property-image.image-4 {
+    background-image: url('illus4.jpg');
+}
+.property-image.image-5 {
+    background-image: url('illus5.png');
+}
+
+
+.property-image.image-6 {
+    background-image: url('illus6.png');
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+
+    right: 15px; background: #10b981;
+    color: white;
+
+    padding: 5px 12px;
+    border-radius: 5px; font-size: 13px;
+
+    font-weight: 600;
+}
+
+.badge.rent {
+    background: #f59e0b;
+}
+
+.property-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.property-details h3 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+.property-details .btn-outline {
+    margin-top: auto;
+}
+
+.location {
+    color: #334155;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px; font-weight: 700;
+    color: #2563eb;
+
+    margin: 15px 0;
+}
+
+
+.property-features {
+    display: flex;
+     
+    gap: 15px;
+    margin: 15px 0 20px; font-size: 14px;
+    color: #334155;
+}
+
+@media (max-width: 600px) {
+    .property-features {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
