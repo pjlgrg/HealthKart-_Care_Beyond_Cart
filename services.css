@@ -1,0 +1,67 @@
+.services-page .services-grid {
+    gap: 24px;
+}
+
+.services-page .service-card {
+     padding: 30px 24px;
+    text-align: left;   display: flex;
+     
+    flex-direction: column;
+     gap: 12px;
+    border-radius: 16px;
+     
+    background: #ffffff;   border-top: 5px solid transparent;
+      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.08);
+}
+
+.services-page .service-icon {
+    width: 90px;
+    height: 90px;  margin: 0 auto 10px;
+    border-radius: 18px;
+
+    background: #eef2ff;   display: flex;
+    align-items: center;   justify-content: center;
+    font-size: 40px;
+}
+
+.services-page .service-card p {
+    margin: 0;
+}
+
+.services-page .service-card ul {
+    list-style: disc;  padding-left: 20px;
+    margin: 0;
+
+    color: #475569; font-size: 15px;
+ line-height: 1.5;
+}
+.services-page .service-card ul li {
+    margin-bottom: 6px;
+    
+    overflow-wrap: anywhere;
+}
+.services-page .service-card:nth-child(1) {
+    border-top-color: #f472b6;
+}
+.services-page .service-card:nth-child(1):hover {
+    background: #ffe0eb;
+}
+.services-page .service-card:nth-child(2) {
+    border-top-color: #fbbf24;
+}
+.services-page .service-card:nth-child(2):hover {
+    background: #ffe8b0;
+}
+.services-page .service-card:nth-child(3) {
+    border-top-color: #a78bfa;
+}
+.services-page .service-card:nth-child(3):hover {
+    background: #e5daff;
+}
+.services-page .service-card:nth-child(4) {
+    border-top-color: #22d3ee;
+}
+.services-page .service-card:nth-child(4):hover {
+    background: #c6f7ff;
+}
+
