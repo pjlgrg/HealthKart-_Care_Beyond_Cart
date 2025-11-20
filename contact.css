@@ -1,0 +1,156 @@
+.contact {
+    background: #f8fafc;
+    padding: 70px 0;
+}
+
+.contact .intro-text {
+    text-align: center;
+    max-width: 700px;
+
+    margin: 0 auto 50px;  color: #334155;
+    line-height: 1.7;
+}
+
+
+.contact-content {
+    display: grid;   grid-template-columns: 1fr 2fr; gap: 50px;
+
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info h3, .contact-info h4 {
+    color: #1e293b;
+}
+
+
+
+.social-block {
+    margin-top: 30px;
+}
+
+.social-block h4 {
+    margin-bottom: 15px;
+}
+
+.info-item {
+    display: flex;  align-items: center;
+    gap: 15px;
+     
+    margin-bottom: 20px; font-size: 16px;
+    color: #334155;
+}
+
+.info-item .icon {
+    font-size: 24px;
+}
+
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+.quick-support {
+    margin-top: 30px;  padding: 20px;
+
+    background: white;
+    border-radius: 10px;   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.contact-form input, .contact-form textarea,
+.contact-form select {
+    padding: 12px;
+    border: 1px solid #ccc; border-radius: 5px;
+    font-size: 16px;
+
+    font-family: 'Poppins', sans-serif;
+    color: #334155;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,  .contact-form select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+
+/* Map section */
+.map-section {
+    padding: 60px 0;
+    background: #f8fafc;
+}
+
+.map-placeholder {
+    background: linear-gradient(to right, #1A544A, #4B8A82);
+    height: 400px;
+    border-radius: 10px;  display: flex;
+
+    align-items: center;
+    justify-content: center; color: white;
+     
+    text-align: center;
+}
+
+.map-placeholder h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.map-placeholder p {
+    font-size: 18px;
+}
+
+.map-placeholder .note {
+    font-size: 16px;  margin-top: 10px;
+    opacity: 0.9;
+}
+
+.faq-section {
+    padding: 60px 0;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;  border-radius: 10px;
+
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card h4 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    color: #334155;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    .map-placeholder {
+        height: 320px;
+        padding: 40px 20px;
+    }
+}
