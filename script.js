@@ -1,4 +1,3 @@
-// Simple search filter for service cards on the home page
 const searchInput = document.getElementById('serviceSearch');
 const serviceCards = document.querySelectorAll('.service-card');
 const themeToggleBtn = document.getElementById('themeToggle');
@@ -22,7 +21,6 @@ if (themeToggleBtn) {
   });
 }
 
-// Simple hover to show medicine list per service card
 const medicineData = {
   'Sore Throat': ['Strepsils', 'Betadine Gargle', 'Cepacol Lozenges', 'Chloraseptic Spray', 'Vicks Lozenges', 'Halls', 'Himalaya Koflet', 'Hedera Syrup', 'Tantum Verde', 'Saltwater Gargle'],
   Fever: ['Paracetamol', 'Dolo 650', 'Calpol', 'Crocin', 'Combiflam', 'Ibuprofen', 'Meftal', 'Nimesulide', 'Advil', 'Acetaminophen'],
@@ -41,7 +39,6 @@ serviceCards.forEach((card) => {
   const titleText = titleEl.textContent.trim();
   const meds = medicineData[titleText] || ['Paracetamol'];
 
-  // Create a simple list of medicines
   const list = document.createElement('ul');
   list.className = 'medicine-list';
   meds.forEach((med) => {
@@ -50,10 +47,8 @@ serviceCards.forEach((card) => {
     list.appendChild(li);
   });
 
-  // Append the list once
   card.appendChild(list);
 
-  // Toggle view on hover
   card.addEventListener('mouseenter', () => {
     card.classList.add('show-list');
   });
